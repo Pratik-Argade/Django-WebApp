@@ -1,33 +1,33 @@
 # AWS cluster for Deploy Django-WebApp application
 
  # step 1- Create a AWS EC2 machine
-         instyall the AWS CLI on linux machine
+        - install the AWS CLI on linux machine
 
  # step 2- Install Git packages on a AWS ec2 machine
 sh
   Update the package list
-sudo yum update -y
+      -sudo yum update -y
 
   Install Git
-sudo yum install git -y
+       sudo yum install git -y
 
   Verify the installation
-git --version ```
+       git --version ```
 
 # step 3- Install Docker packages on AWS ec2 machine
 
   Update the package list
-sudo yum update -y
+       sudo yum update -y
 
   Install Docker
-sudo yum install docker -y
+       sudo yum install docker -y
 
-  Start the Docker service
-sudo service docker start
-sudo systemctl enable docker
+       Start the Docker service
+       sudo service docker start
+       sudo systemctl enable docker
 
-  Add your user to the Docker group
-sudo usermod -aG docker ec2-user
+       Add your user to the Docker group
+-      sudo usermod -aG docker ec2-user
 
 
  # step 4- Install and configure a Jenkins on aws ec2 machine.
