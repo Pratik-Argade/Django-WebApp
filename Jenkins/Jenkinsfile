@@ -67,6 +67,15 @@
                 }
             }
         }
+       stage('Deploy the Deployment on a AWS KS') {
+          steps {
+              script {
+                   //deploy the Deployment on a EKS
+                     sh """
+                         kubectl apply -f deploy.yaml
+                      """
+              }
+          }     
     }
     
 
