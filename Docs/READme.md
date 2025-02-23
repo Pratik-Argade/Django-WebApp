@@ -13,6 +13,7 @@ sudo yum install git -y
 
 # Verify the installation
 git --version
+        ```
 
  step 3- Install Docker packages on AWS ec2 machine
 
