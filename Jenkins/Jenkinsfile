@@ -38,7 +38,14 @@
                 }
             }
         }
-
+        stage('Scan with Trivy') {
+            steps {
+                script {
+                    // Scan the Docker image with Trivy
+                    sh 'trivy --exit-code 1 --severity HIGH,CRITICAL --no-progress '${ECR_REPO_NAME}:${IMAGE_TAG}
+                }
+            }
+        }
         stage('Tag Docker Image') {
             steps {
                 script {
@@ -61,6 +68,7 @@
             }
         }
     }
+    
 
     post {
         always {
