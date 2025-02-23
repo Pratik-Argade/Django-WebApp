@@ -29,7 +29,7 @@ sudo systemctl enable docker
 
 # Add your user to the Docker group
 sudo usermod -aG docker ec2-user
-```
+
 
  step 4- Install and configure a Jenkins on aws ec2 machine.
 
