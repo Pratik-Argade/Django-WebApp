@@ -13,7 +13,7 @@
         stage('Checkout Code') {
             steps {
                 // Pull the latest code from GitHub
-                checkout scm
+               checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Pratik-Argade/Django-WebApp.git']])
             }
         }
 
