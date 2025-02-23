@@ -3,9 +3,9 @@
     agent any
 
     environment {
-        AWS_ACCOUNT_ID = 'your-aws-account-id'  // Replace with your AWS account ID
-        AWS_REGION = 'us-west-2'  // Replace with your AWS region
-        ECR_REPO_NAME = 'your-repo-name'  // Replace with your ECR repository name
+        AWS_ACCOUNT_ID = '908027373736'  // Replace with your AWS account ID
+        AWS_REGION = 'us-east-1'  // Replace with your AWS region
+        ECR_REPO_NAME = 'test1'  // Replace with your ECR repository name
         IMAGE_TAG = "latest"  // You can dynamically use commit hash or Jenkins build number
     }
 
